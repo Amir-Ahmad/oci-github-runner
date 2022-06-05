@@ -1,0 +1,19 @@
+# Values you must set
+ocid_tenancy         = "ocid1.tenancy.oc1..some.tenancy"
+ocid_user            = "ocid1.user.oc1..some.user"
+oci_region           = "some-oci-region"
+oci_fingerprint      = "A1.some.fingerprint"
+oci_private_key_path = "/path/to/private_oci_key.pem"
+ssh_public_key_path  = "/path/to/public_key.pub"
+github_runner_url    = "https://github.com/<organization>"
+github_runner_token  = "<github_runner_token>"
+
+# values you can optionally change
+instance_shape          = "VM.Standard.A1.Flex"
+instance_memory_gb      = "12"
+instance_ocpu           = "2"
+instance_count          = "2"
+vcn_label               = "ghrunner"
+subnet_label            = "ghrunner"
+allow_ssh_from_anywhere = false
+create_oci_bastion      = true
